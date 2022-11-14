@@ -80,6 +80,6 @@ class Client(AbstractPerson):
 
 
 class VipClient(Client):
-    vip_status_start = models.BooleanField()
-    donation_amount = models.BooleanField(default=False)
+    vip_status_start = models.CharField(max_length=20)
+    donation_amount = models.IntegerField(default=0)
 
